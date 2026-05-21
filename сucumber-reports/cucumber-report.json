@@ -1,0 +1,160 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "all-tests-related-to-patient-module;verify-get-patients-return-data",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "verify GET patients return data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21748000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "doctor is logged in",
+            "match": {
+              "location": "src/step-definitions/api/ApiSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 977855707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user hits GET \"/api-patients\"",
+            "match": {
+              "location": "src/step-definitions/api/ApiSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 391349500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "verify status code is 200",
+            "match": {
+              "location": "src/step-definitions/api/ApiSteps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3188709
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2501457
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "all-tests-related-to-patient-module;verify-doctor-can-create-patient-with-post",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "verify doctor can create patient with POST",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20238707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "doctor is logged in",
+            "match": {
+              "location": "src/step-definitions/api/ApiSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 979187375
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"first_name\": \"string\",\n    \"last_name\": \"string\",\n    \"dob\": \"2026-05-20\",\n    \"gender\": \"Male\",\n    \"phone\": \"string\",\n    \"email\": \"string\",\n    \"address\": \"string\",\n    \"emergency_contact_name\": \"string\",\n    \"emergency_contact_phone\": \"string\",\n    \"insurance_provider\": \"string\",\n    \"insurance_policy_number\": \"string\"\n}",
+                "line": 13
+              }
+            ],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user hits POST \"/api-patients\" with body",
+            "match": {
+              "location": "src/step-definitions/api/ApiSteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 524204000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "verify status code is 201",
+            "match": {
+              "location": "src/step-definitions/api/ApiSteps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1952291
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1603333
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "all-tests-related-to-patient-module",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "all tests related to patient module",
+    "tags": [],
+    "uri": "features/api/Patient.feature"
+  }
+]
