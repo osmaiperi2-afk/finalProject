@@ -15,4 +15,4 @@ cucumber-reports/
 .github/workflows/
 .env
 node_modules/
-features/api
+сucumber-reports
