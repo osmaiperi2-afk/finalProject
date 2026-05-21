@@ -10,3 +10,8 @@ node_modules/
 .env
 playwright-report/
 test-results/
+cucumber-reports/
+.vscode/
+.github/workflows/
+.env
+node_modules/
